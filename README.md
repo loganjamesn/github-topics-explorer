@@ -2,6 +2,8 @@
 
 Author: [Logan Nottbohm](https://github.com/loganjamesn)
 
+![Screenshot of App in use.](https://github.com/loganjamesn/github-topics-explorer/tree/main/public/topic-explorer-demo.png?raw=true)
+
 ## Assignment:
 
 Your task is to build a React web application that displays all the "[topics](https://docs.github.com/en/free-pro-team@latest/graphql/reference/objects#topic)" related to the term "react", using the GitHub GraphQL API.
