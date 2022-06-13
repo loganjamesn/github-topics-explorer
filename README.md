@@ -2,7 +2,7 @@
 
 Author: [Logan Nottbohm](https://github.com/loganjamesn)
 
-![Screenshot of App in use.](https://github.com/loganjamesn/github-topics-explorer/tree/main/public/topic-explorer-demo.png?raw=true)
+![Screenshot of App in use.](https://raw.githubusercontent.com/loganjamesn/github-topics-explorer/main/public/topic-explorer-demo.png)
 
 ## Assignment:
 
