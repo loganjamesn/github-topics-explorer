@@ -21,14 +21,21 @@ export const TopicsContainer = () => {
             setTopic={setTopic} 
         />
         <div className="topics">
-            {data?.topic?.relatedTopics?.map((topic) => (
-                <Topic 
-                    key={topic.name} 
-                    name={topic.name} 
-                    stargazerCount={topic.stargazerCount}
-                    setTopic={setTopic} 
-                />
-            ))}
+            {
+                data.topic.relatedTopics.length === 0 ? (
+                    <div className="no-results">
+                        <p>Sorry, no results found for "{topic}".</p>
+                    </div>
+                )
+                : data.topic.relatedTopics.map((topic) => (
+                    <Topic 
+                        key={topic.name} 
+                        name={topic.name} 
+                        stargazerCount={topic.stargazerCount}
+                        setTopic={setTopic} 
+                    />
+                ))
+            }
         </div>
       </div>
     )
