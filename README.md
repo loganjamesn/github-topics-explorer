@@ -1,6 +1,6 @@
 # GitHub Topic Explorer 
 
-Author: "[Logan Nottbohm](https://github.com/loganjamesn)"
+Author: [Logan Nottbohm](https://github.com/loganjamesn)
 
 ## Assignment:
 
