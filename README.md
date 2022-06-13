@@ -56,6 +56,12 @@ Feel free to elaborate on how you would improve any of the following topics
 
 * Code Structuring:
 
+I tried to group my components small with related styles in each component's folder to improve readability.
+
 * Refactoring:
 
+With more time I would have put more effort into my error handling, accessibility and making everything tabbable, styling, unit tests, better labeling and tooltips.
+
 * Additional Features:
+
+I'd love to see this app use pagination, search autocompletion with fuzzy keywords, and sorting functionality.

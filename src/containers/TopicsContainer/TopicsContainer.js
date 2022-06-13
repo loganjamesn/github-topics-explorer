@@ -4,6 +4,9 @@ import { GET_TOPICS } from "../../graphql/GET_TOPICS";
 import { Search } from "../../components/Search/Search";
 import { Topic } from "../../components/Topic/Topic";
 
+//Styles
+import { TopicElementsContainer } from "./styles";
+
 export const TopicsContainer = () => {
 
     const [topic, setTopic] = useState("react");
@@ -23,7 +26,7 @@ export const TopicsContainer = () => {
             setTopic={setTopic} 
         />
 
-        <div className="topics">
+        <TopicElementsContainer>
             {   // Fallback for no results
                 data.topic.relatedTopics.length === 0 ? (
                     <div className="no-results">
@@ -41,7 +44,7 @@ export const TopicsContainer = () => {
                     />
                 ))
             }
-        </div>
+        </TopicElementsContainer>
 
       </div>
 
