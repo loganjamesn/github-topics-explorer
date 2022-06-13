@@ -19,7 +19,7 @@ const httpLink = createHttpLink({
 
 // Authenticating via our API token
 const authLink = setContext((_, {headers}) => {
-  const token = process.env.REACT_APP_GITHUB_API_TOKEN;
+  const token = process.env.REACT_APP_GITHUB_API_TOKEN; 
 
   return {
     headers: {

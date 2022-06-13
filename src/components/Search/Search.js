@@ -27,7 +27,7 @@ export const Search = ({ topic, setTopic }) => {
 
     return (
         <SearchElement>
-            <label><h5>Search</h5></label>
+            <label><h5>Search Related Topics</h5></label>
             <div className="search-field">
                 <input
                     type="string"
