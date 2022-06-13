@@ -35,6 +35,10 @@ Best of luck
 
 In the project directory, you can run:
 
+* `nvm use 14` if you aren't already using version 14.
+
+* `npm install`
+
 * `npm start`
 
 Runs the app in the development mode.\
