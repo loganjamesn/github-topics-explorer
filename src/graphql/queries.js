@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const GET_TOPICS = gql`
+export const GET_TOPICS = (topic) => gql`
     query {
-        topic(name: "react") {
+        topic(name: "${topic}") {
             name
             stargazerCount
             relatedTopics(first: 10) {
