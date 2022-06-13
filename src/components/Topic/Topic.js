@@ -5,6 +5,7 @@ export function Topic({ name, stargazerCount, setTopic }) {
         <div 
             className="topic"
             onClick={() => {
+                // Replace currently queried topic with this one
                 setTopic(name);
             }}
         >

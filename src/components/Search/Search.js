@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Update topic query value for "name"
 function useTopicFilter() {
     const [filters, _updateFilter] = useState({ 
         name: undefined 
@@ -25,22 +26,27 @@ export const Search = ({ topic, setTopic }) => {
         <div className="search">
             <label>Search</label>
             <input
-            onChange={(e) => operations.updateFilter("name", e.target.value)}
-            type="string"
-            onKeyPress={(ev) => {
-                if (ev.key === "Enter") {
-                ev.preventDefault();
-                setTopic(models.filters.name);
-                }
-            }}
-            placeholder={topic}
+                type="string"
+                placeholder={topic}
+                onChange={(e) => {
+                    // Readies topic query for new fetch while typing
+                    operations.updateFilter("name", e.target.value);
+                }}
+                onKeyPress={(ev) => {
+                    // Searches new topic query on enter
+                    if (ev.key === "Enter") {
+                        ev.preventDefault();
+                        setTopic(models.filters.name);
+                    }
+                }}
             />
             <button
-            onClick={() => {
-                setTopic(models.filters.name);
-            }}
-            >
-            Submit
+                onClick={() => {
+                    // Searches new topic query on click
+                    setTopic(models.filters.name);
+                }}
+                >
+                Submit
             </button>
         </div>
     )

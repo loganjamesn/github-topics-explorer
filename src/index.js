@@ -12,10 +12,12 @@ import './index.scss';
 
 import App from './App';
 
+// Path to our data
 const httpLink = createHttpLink({
   uri: "https://api.github.com/graphql",
 });
 
+// Authenticating via our API token
 const authLink = setContext((_, {headers}) => {
   const token = process.env.REACT_APP_GITHUB_API_TOKEN;
 
@@ -27,6 +29,7 @@ const authLink = setContext((_, {headers}) => {
   };
 });
 
+// Initiating our client
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
@@ -34,6 +37,7 @@ const client = new ApolloClient({
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// Rendering app with client access
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>

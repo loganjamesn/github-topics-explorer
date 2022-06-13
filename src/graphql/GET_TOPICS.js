@@ -1,5 +1,6 @@
 import { gql } from "@apollo/client";
 
+// Passing our topic variable to the query
 export const GET_TOPICS = (topic) => gql`
     query {
         topic(name: "${topic}") {
