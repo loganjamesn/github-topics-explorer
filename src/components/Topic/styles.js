@@ -8,6 +8,7 @@ const TopicElement = styled.div`
   grid-template-columns: 2fr 1fr;
   background: white;
   text-transform: capitalize;
+  outline: none !important;
 
   .topic-name {
       margin: 1rem 0;

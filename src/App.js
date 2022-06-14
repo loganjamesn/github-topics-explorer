@@ -5,8 +5,10 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <h1>GitHub Topics Explorer</h1>
-      <p>Search below or click on any topic to find related GitHub topics and their number of stargazers.</p>
+      <div className="intro">
+        <h1>GitHub Topics Explorer</h1>
+        <p>Search below or click on any topic to find related GitHub topics and their number of stargazers.</p>        
+      </div>
       <TopicsContainer />
     </div>
   );

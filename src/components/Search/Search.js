@@ -27,11 +27,10 @@ export const Search = ({ topic, setTopic }) => {
 
     return (
         <SearchElement>
-            <label><h5>Search Related Topics</h5></label>
             <div className="search-field">
                 <input
                     type="string"
-                    placeholder={topic}
+                    placeholder={"Search: " + topic}
                     onChange={(e) => {
                         // Readies topic query for new fetch while typing
                         operations.updateFilter("name", e.target.value);
