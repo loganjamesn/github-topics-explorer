@@ -34,6 +34,7 @@ const TopicElement = styled.div`
 
   h5 {
       margin: 0;
+      text-align: right;
   }
 	
 `;

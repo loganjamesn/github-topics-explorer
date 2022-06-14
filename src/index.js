@@ -10,7 +10,7 @@ import { setContext } from "@apollo/client/link/context";
 
 import './index.scss';
 
-import App from './App';
+import App from './App'; 
 
 // Path to our data
 const httpLink = createHttpLink({
@@ -23,7 +23,7 @@ const authLink = setContext((_, {headers}) => {
 
   return {
     headers: {
-      ...headers,
+      ...headers, 
       authorization: token ? `Bearer ${token}` : "",
     },
   };
