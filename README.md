@@ -68,7 +68,7 @@ I tried to group my components small with related styles in each component's fol
 
 * Refactoring:
 
-With more time I would have put more effort into my error handling, accessibility and making everything tabbable, styling, unit tests, better labeling and tooltips.
+With more time I would have put more effort into my error handling, accessibility and making everything tabbable, styling, unit tests, better labeling and tooltips. (test)
 
 * Additional Features:
 
